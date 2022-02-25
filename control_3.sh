@@ -1,0 +1,10 @@
+import pandas as pd
+print("    pub_year")
+df1=msc.mining_pubs(tipo="PD")
+print(pd.concat([df1.iloc[:2],df1.iloc[190:]]))
+print("    pub_authors")
+df2=msc.mining_pubs(tipo="AU")
+print(pd.concat([df2.iloc[:2],df2.iloc[190:]]))
+print("    countries")
+df3=msc.mining_pubs(tipo="AD")
+print(pd.concat([df3.iloc[:2],df3.iloc[199:]]))
